@@ -1,0 +1,110 @@
+Git Install:
+
+This link will guide you on how to install and set up git on Windows (if you have not done it already).
+https://deanin.com/blog/git/
+https://www.youtube.com/watch?v=zUHRNLVpoIE
+
+For linux users it is as simple as running this in the terminal from an admin account:
+sudo apt install git
+
+=====================================================================
+
+Contributing to Open-Source:
+
+https://scikit-learn.org/stable/developers/contributing.html
+
+Sample Contributions:
+https://github.com/scikit-learn/scikit-learn/pull/24738
+https://scikit-learn.org/stable/modules/linear_model.html#generalized-linear-models
+
+https://scikit-learn.org/stable/whats_new/v1.2.html#version-1-2-1
+
+
+https://scikit-learn.org/dev/whats_new/v1.3.html
+https://github.com/scikit-learn/scikit-learn/pull/24882
+
+
+https://github.com/awinml
+====================================================================
+
+Follow Coding Standards:
+
+Format code with black and flake8
+
+
+=====================================================================
+
+https://inria.github.io/scikit-learn-mooc/index.html
+
+
+Sklearn Pipeline and ColumnTransformer
+https://blog.scikit-learn.org/technical/pandas-dataframe-output-for-sklearn-transformer/
+
+
+Usual ML pipeline:
+Split the data --> Impute Missing Values --> Encode Categorical Features --> Scale Features --> Fit a model --> Predict --> Evaluate
+
+https://scikit-learn.org/stable/modules/preprocessing.html
+
+Different Imputers:
+-------------------
+
+
+SimpleImputer:
+This imputer is used to impute missing values with a specified constant value or a statistic of the data such as mean, median, or most frequent value. The imputation strategy can be set using the strategy parameter. It supports mean, median, most_frequent, and constant.
+
+KNNImputer:
+This imputer is used to impute missing values using the k-Nearest Neighbors approach. It replaces missing values with the mean of the k-nearest neighbors of each sample.
+
+IterativeImputer:
+This imputer is used to impute missing values using a machine learning model. It works by modeling each feature with missing values as a function of the other features in a round-robin fashion. The estimator parameter specifies the machine learning model to be used for imputation.
+
+MissingIndicator:
+This transformer is used to add a binary feature for each feature that has missing values, indicating whether the value was missing or not.
+
+FunctionTransformer:
+This transformer can be used to apply a custom function to the dataset. It can be used to perform custom imputation of missing values.
+
+
+Different Scalers:
+------------------
+
+
+StandardScaler: Scales features to have zero mean and unit variance. This scaler assumes that the data follows a Gaussian distribution and is sensitive to outliers.
+
+MinMaxScaler: Scales features to a given range, usually [0, 1]. This scaler preserves the shape of the original distribution, but is sensitive to outliers.
+
+MaxAbsScaler: Scales features to the range [-1, 1] by dividing through by the maximum absolute value. This scaler is also sensitive to outliers.
+
+RobustScaler: Scales features based on their interquartile range (IQR), making it robust to outliers. It scales the data to have zero median and unit IQR.
+
+PowerTransformer: Transforms features to follow a Gaussian distribution. It uses either the Yeo-Johnson or Box-Cox method to achieve this.
+
+QuantileTransformer: Transforms features to follow a uniform or normal distribution. It uses quantiles to map the original data to a specified distribution.
+
+Normalizer: Scales each sample (i.e. each row of the data) independently to have unit norm (i.e. Euclidean length 1). This scaler is often used when the absolute magnitude of the features is less important than the direction in which they point.
+
+Each scaler has its own strengths and weaknesses, and the choice of which one to use depends on the specific characteristics of the data and the modeling problem at hand.
+
+
+
+Different Encoders:
+-------------------
+
+LabelEncoder: This encoder is used to transform a single categorical column of strings or integers into numerical labels. It assigns a unique integer value to each category in the column. For example, if we have a column "Color" with values ["Red", "Blue", "Green"], LabelEncoder will transform it to [0, 1, 2].
+
+OneHotEncoder: This encoder is used to transform a categorical column into a binary vector representation, where each column in the vector represents a unique category. For example, if we have a column "Color" with values ["Red", "Blue", "Green"], OneHotEncoder will transform it to three columns ["Red", "Blue", "Green"] with binary values of 1 or 0, indicating the presence or absence of that category in each row.
+
+OrdinalEncoder: This encoder is similar to LabelEncoder, but it can be used to transform multiple categorical columns at once. It assigns a unique integer value to each category in each column. For example, if we have two columns "Color" with values ["Red", "Blue", "Green"] and "Size" with values ["Small", "Medium", "Large"], OrdinalEncoder will transform them to [0, 1, 2] and [0, 1, 2], respectively.
+
+TargetEncoder: This encoder is used to transform categorical features into numeric features based on the target variable. It replaces each category with the mean of the target variable for that category. This encoder is useful when there is a high cardinality categorical feature in the dataset.
+
+BinaryEncoder: This encoder is used to transform categorical features into binary features. It represents each category with a binary code. This encoder is useful when there are a large number of categories in the dataset.
+
+CountEncoder: This encoder is used to transform categorical features into the count of observations for each category in the dataset. This encoder is useful when there are a large number of categories in the dataset.
+
+BaseNEncoder: This encoder is used to transform categorical features into base-n encoded features. It represents each category with a base-n code. This encoder is useful when there are a large number of categories in the dataset.
+
+HashingEncoder: This encoder is used to transform categorical features into hashed features. It represents each category with a hash code. This encoder is useful when there are a large number of categories in the dataset and the number of categories is unknown.
+
+
