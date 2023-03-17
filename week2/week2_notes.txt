@@ -178,3 +178,9 @@ histogram
 kernel density plots
 density plots
 heatmaps
+
+
+===============================================================================
+
+The notebook can be viewed here:
+https://colab.research.google.com/drive/1o5wnbv30yTb80u5qNP9wlMKwjBX8ZS6I?usp=sharing

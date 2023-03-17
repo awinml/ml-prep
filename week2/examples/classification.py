@@ -17,12 +17,12 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Define preprocessing steps
 scaler = StandardScaler()
-categorical_transformer = OneHotEncoder(handle_unknown="ignore")
+categorical_encoder = OneHotEncoder(handle_unknown="ignore")
 scale_cols = ["Age", "EstimatedSalary"]
 cat_cols = ["Gender"]
 preprocessor = ColumnTransformer(
     transformers=[
-        ("cat", categorical_transformer, cat_cols),
+        ("cat", categorical_encoder, cat_cols),
         ("scale", scaler, scale_cols),
     ]
 )
