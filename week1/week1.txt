@@ -1,0 +1,9 @@
+Git Install:
+
+This link will guide you on how to install and set up git on Windows (if you have not done it already).
+https://deanin.com/blog/git/
+https://www.youtube.com/watch?v=zUHRNLVpoIE
+
+For linux users it is as simple as running this in the terminal from an admin account:
+sudo apt install git
+
