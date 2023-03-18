@@ -23,6 +23,10 @@ Follow Coding Standards:
 Format code with black and flake8
 
 
+Resume Template:
+https://docs.google.com/document/d/1TJLhn9n6KaKT0YVbUABxoK8WuSXfcNsnTUAHvA9CqIA/edit#
+
+
 =====================================================================
 
 https://inria.github.io/scikit-learn-mooc/index.html
